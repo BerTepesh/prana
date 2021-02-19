@@ -895,7 +895,7 @@ button {
 
 .ham-menu__holder {
   padding: 35px 30px 30px;
-  width: 205px;
+  /*width: 205px;*/
   height: 100%;
   display: flex;
   margin: 0 auto;
