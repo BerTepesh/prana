@@ -1,0 +1,11 @@
+$xxl: 1200px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+@mixin bp($res) {
+  @media (min-width: $res) {
+    @content;
+  }
+}

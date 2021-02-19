@@ -1,0 +1,32 @@
+{% from '../macros/icon.twig' import icon %}
+
+<header class="header">
+	<a href="/" class="header__logo">
+		{{ icon('logo' , {'width': 122, 'height': 32}) }}
+	</a>
+	<div class="header__content">
+		<nav class="main-menu">
+			<ul>
+				<li><a href="#">Где купить</a></li>
+				<li class="active"><a href="#">О компании</a></li>
+				<li><a href="#">О кислороде</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="header__phone order-call">
+			<span class="order-call__phone">+7 (499) 444-61-38</span>
+			<div class="order-call__dropdown">
+				<a href="#">Заказать звонок</a>
+			</div>
+		</div>
+		<a href="#sidr" class="ham-menu-trigger-wrap js_ham-menu">
+			<span class="ham-menu-trigger"></span>
+		</a>
+		<a href="#" class="header__user">
+			{{ icon('user' , {'width': 19, 'height': 20}) }}
+		</a>
+		<a href="#" class="header__search">
+			{{ icon('search' , {'width': 20, 'height': 20}) }}
+		</a>
+	</div>
+</header>

@@ -1,0 +1,58 @@
+{% from '../macros/icon.twig' import icon %}
+
+<footer class="footer">
+	<div class="container">
+			<div class="footer__logo">
+				{{ icon('logo2' , {'width': 154, 'height': 40}) }}
+			</div>
+			<nav class="footer__menu">
+				<ul>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">Где купить</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">О кислороде</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+	</div>
+	<div class="footer__contacts">
+		<div class="container">
+			<div class="footer__contacts__content">
+				<div class="footer__contacts__item">
+					<div class="socials">
+						<a href="#" target="_blank" rel="nofollow noopener">
+							{{ icon('tw' , {'width': 36, 'height': 36}) }}
+						</a>
+						<a href="#" target="_blank" rel="nofollow noopener">
+							{{ icon('yt' , {'width': 36, 'height': 36}) }}
+						</a>
+						<a href="#" target="_blank" rel="nofollow noopener">
+							{{ icon('fb' , {'width': 36, 'height': 36}) }}
+						</a>
+						<a href="#" target="_blank" rel="nofollow noopener">
+							{{ icon('ig' , {'width': 36, 'height': 36}) }}
+						</a>
+					</div>
+				</div>
+				<div class="footer__contacts__item">
+					<div class="footer__email">
+						{{ icon('mail' , {'width': 24, 'height': 24}) }}
+						<a href="mailto:E-mail@mail.com">
+								E-mail@mail.com
+							 <span>Написать нам</span>
+						</a> 
+					</div>
+				</div>
+				<div class="footer__contacts__item">
+					<div class="footer__phone">
+						{{ icon('phone' , {'width': 24, 'height': 24}) }}
+						<a href="#">
+							+7 (499) 444-61-38
+							<span>Заказать звонок</span>
+					 </a> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

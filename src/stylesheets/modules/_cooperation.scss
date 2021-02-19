@@ -1,0 +1,80 @@
+.cooperation {
+	background:  #0061a8;
+	padding: 80px 0 25px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 815px;
+		height: 1023px;
+		bottom: -90px;
+		right: 50%;
+		z-index: -1;
+		background: url(../../assets/images/about/cooperation/back1.png) no-repeat;
+		@include bp($xl) {
+			left: 0;
+			right: auto;
+		}
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 1440px;
+		height: 500px;
+		bottom: -300px;
+		left: -350px;
+		z-index: -1;
+		background: url(../../assets/images/about/cooperation/back2.png) no-repeat;
+		@include bp($xl) {
+			right: 0;
+			left: auto;
+		}
+	}
+	&__holder {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 985px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__description {
+		width: 100%;
+		@include bp($md) {
+			width: 60%;
+		}
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 55px;
+		color: #fff;
+		margin-bottom: 22px;
+	}
+	p {
+		color: #fff;
+	}
+	&__inputs {
+		width: 100%;
+		padding-top: 10px;
+		margin-bottom: 35px;
+		@include bp($md) {
+			width: 40%;
+		}
+	}
+	&__submit {
+		text-align: center;
+		width: 100%;
+		.btn {
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 12px;
+			max-width: 256px;
+			margin-left: auto;
+			margin-right: auto;
+			line-height: 15px;
+		}
+	}
+}

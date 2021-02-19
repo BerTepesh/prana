@@ -1,0 +1,140 @@
+@media (min-width: 576px) {
+  body {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  h1 {
+    font-size: 75px;
+    line-height: 91px;
+  }
+  .btn {
+    padding: 15px 30px 15px;
+    font-size: 18px;
+  }
+  .btn_white {
+    padding: 15px 50px 15px;
+  }
+  .container {
+    max-width: 570px;
+  }
+  .ham-menu {
+    width: 360px;
+  }
+  .features__holder {
+    display: flex;
+    justify-content: space-around;
+  }
+  .briefly-list__item {
+    width: 45%;
+    margin-bottom: 55px;
+  }
+  .terms {
+    background-position-x: 70%;
+  }
+  .terms__holder {
+    height: 660px;
+  }
+  .terms__content {
+    text-align: right;
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 760px;
+  }
+  .input-text input {
+    font-size: 18px;
+  }
+  .footer__menu ul li {
+    width: auto;
+    text-align: left;
+  }
+  .footer__contacts__content {
+    justify-content: space-between;
+  }
+  .footer__contacts__item {
+    width: auto;
+  }
+  .features__item span {
+    font-size: 85px;
+    line-height: 104px;
+  }
+  .briefly-list {
+    padding: 0 40px;
+  }
+  .comfort-item {
+    width: 33.333333%;
+  }
+  .comfort-item__text {
+    height: 280px;
+  }
+  .cooperation__description {
+    width: 60%;
+  }
+  .cooperation__inputs {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 990px;
+  }
+  .intro {
+    height: calc(100vh + 146px);
+  }
+  .intro__holder {
+    margin-top: -146px;
+  }
+  .briefly-list__item {
+    width: 35%;
+  }
+  .comfort-item__text {
+    height: 240px;
+  }
+  .comfort-item__title {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .terms {
+    background-position-x: center;
+  }
+  .terms__content {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 20px 40px;
+  }
+  .header__phone {
+    display: block;
+  }
+  .header .main-menu {
+    display: block;
+  }
+  .ham-menu-trigger-wrap {
+    display: none;
+  }
+  .container {
+    max-width: 1170px;
+  }
+  .ham-menu {
+    display: none;
+  }
+  .intro {
+    background-position-x: center;
+  }
+  .comfort-item__title {
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .cooperation:before {
+    left: 0;
+    right: auto;
+  }
+  .cooperation:after {
+    right: 0;
+    left: auto;
+  }
+}

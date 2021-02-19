@@ -1,0 +1,66 @@
+.comfort {
+	margin-bottom: 100px;
+	h2 {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	&__holder {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		flex-direction: row;
+		margin: 0 -7px -20px;
+	}
+}
+.comfort-item {
+	width: 100%;
+	padding: 0 7px;
+	margin-bottom: 20px;
+	@include bp($md) {
+		width: 33.333333%;
+	}
+	&__wrap {
+		cursor: pointer;
+		height: 100%;
+	}
+	&__main {
+		border-radius: 5px;
+		text-align: center;
+		padding: 50px 20px;
+		color: #fff;
+		height: 100%;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	&_1 &__main {
+		background: #7EB1F1;
+	}
+	&_2 &__main {
+		background: #F16227;
+	}
+	&_3 &__main {
+		background: #009913;
+	}
+	&__text {
+		min-height: 120px;
+		padding-bottom: 30px;
+		@include bp($md) {
+			height: 280px;
+		}
+		@include bp($lg) {
+			height: 240px;
+		}
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 26px;
+		@include bp($lg) {
+			font-size: 25px;
+			line-height: 33px;
+		}
+		@include bp($xl) {
+			font-size: 35px;
+			line-height: 43px;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.intro {
+	background-image: url(/assets/images/about/intro/back.jpg);
+	background-position: bottom left;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	height: 700px;
+	@include bp($sm) {
+		
+	}
+	@include bp($md) {
+				
+	}
+	@include bp($lg) {
+		height: calc(100vh + 146px);
+	}
+	@include bp($xxl) {
+		background-position-x: center;
+	}
+	&__holder {
+		width: 100%;
+		@include bp($lg) {
+			margin-top: -146px;	
+		}
+	}
+	&__content {
+		padding: 0 20px;
+	}
+	&__description {
+		max-width: 500px;
+	}
+}
+
+.features {
+	background: #fff;
+	border-radius: 20px;
+	padding: 55px 30px;
+	margin-top: -146px;
+	margin-bottom: 100px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	&__holder {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1050px;
+		@include bp($sm) {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+	&__item {
+		text-align: center;
+		margin-bottom: 20px;
+		span {
+			display: block;
+			color: #F16227;
+			font-size: 75px;
+			line-height: 94px;
+			margin-bottom: 15px;
+			@include bp($md) {
+				font-size: 85px;
+			line-height: 104px;
+			}
+		}
+		p {
+			color: #1F394B;
+			margin-bottom: 0;
+		}
+	}
+}

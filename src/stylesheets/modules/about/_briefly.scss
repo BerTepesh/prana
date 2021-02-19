@@ -1,0 +1,35 @@
+.briefly {
+	h2 {
+		color: #0061a8;
+		text-align: center;
+	}
+}
+.briefly-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+	@include bp($md) {
+		padding: 0 40px;
+	}
+	&__item {
+		flex: none;
+		width: 100%;
+		margin-bottom: 35px;
+		@include bp($sm) {
+			width: 45%;
+			margin-bottom: 55px;
+		}
+		@include bp($lg) {
+			width: 35%;
+		}
+		h3 {
+			color: #0061a8;
+		}
+		p {
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+}
